@@ -33,7 +33,7 @@ jobs:
           github_token: ${{ secrets.GH_TOKEN_PAT }}
           branch_prefix: claude/
           base_branch: master
-          #show_full_output: true
+          show_full_output: true
           claude_args: |
             --model ${{ env.ANTHROPIC_MODEL }}
             --allowedTools Edit,MultiEdit,Write,Read,Glob,Grep,LS,Bash(git:*),Bash(bun:*),Bash(npm:*),Bash(npx:*),Bash(gh:*)
